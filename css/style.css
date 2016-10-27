@@ -1,0 +1,41 @@
+*{
+	
+}
+
+body {
+	#background-image: url("../img/Fundo.jpg");
+    background-color: lightblue;
+	background-size: cover;
+	
+}
+
+h1 {
+    color: white;
+   text-align: center;
+}
+
+p {
+    text-align: justify;}
+	
+.preto {#background-color: black;
+		text-align: center;}
+		
+		.escuro {color: red;
+		}
+		
+ .yellow {#background-color: yellow;
+		text-align: center;}
+
+ .green {#background-color: green;
+		text-align: center;}
+
+.rosa {background-color: #E0FFFF;}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 50%;
+      margin: auto;
+  }
+
+  		
+}
