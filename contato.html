@@ -89,15 +89,15 @@
 					</div>
 					<div class="form-group">
 						<label for="email">Email:</label>
-						<input type="email" class="form-control" id="email" placeholder="Enter email" onblur="validacaoEmail(f1.email)">
+						<input type="email" class="form-control" id="email" placeholder="Enter email" onblur="validacaoEmail(f1.email)" required="true">
 					</div>
 					
 					<div class="form-group">
-					<label for="exampleTextarea">Example textarea</label>
+					<label for="exampleTextarea">Escreva sua mensagem</label>
 					<textarea class="form-control" id="exampleTextarea" rows="3" required="true"></textarea>
 					</div>
 								
-				<button type="submit" class="btn btn-default">Submit</button>
+				<button type="submit" class="btn btn-primary">Submit</button>
 			</form>
 				</div>
 			
@@ -108,7 +108,12 @@
 			<div class="col-lg-4 green"> <h2> OBJETIVOS </h2>
 			
 					<div class="google-maps">
-<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">embed google map</a></small></div><div><small><a href="https://noleggioauto.zone/luogo/brescia/">auto a Brescia</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(-8.035522899999993,-34.85408574570314),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-8.035522899999993,-34.85408574570314)});infowindow = new google.maps.InfoWindow({content:'<strong>IPAD</strong><br>Estrada de Belém, 342 Torreão, Recife-PE, Brasil CEP 52030-280 Fone/Fax: 55 (81) 3048.3253<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+
+<div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">embed google map</a></small></div><div><small><a href="https://noleggioauto.zone/luogo/brescia/">auto a Brescia</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+</div>
+
+<script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(-8.035522899999993,-34.85408574570314),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-8.035522899999993,-34.85408574570314)});infowindow = new google.maps.InfoWindow({content:'<strong>IPAD</strong><br>Estrada de Belém, 342 Torreão, Recife-PE, Brasil CEP 52030-280 Fone/Fax: 55 (81) 3048.3253<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 					</div>
 			</div>
 		
@@ -125,6 +130,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6fWPaKDpyrdQ4QWaANefgrON-0GeSGAk&callback=initMap"
+  type="text/javascript"></script>
 	<script language="Javascript">
 function validacaoEmail(field) {
 usuario = field.value.substring(0, field.value.indexOf("@"));
